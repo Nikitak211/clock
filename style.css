@@ -48,7 +48,8 @@ input::placeholder{
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap');
 body{
-  background-color: rgba(177, 50, 250, 0.733);
+  background-image: url("1234.gif");
+  background-size: cover;
   font-family: 'Inter', sans-serif;
   color: hsl(var(--text));
   margin: var(--xlg) var(--lg);
@@ -69,11 +70,15 @@ body{
   align-items: start;
 }
 h3{
+  color: rgb(255, 233, 30);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(45deg, rgba(238, 88, 230, 0.712),rgba(78, 15, 129, 0.842));
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
   gap: var(--xlg);
   align-items: center;
+  width: fit-content;
 }
 h1{
   position:relative; 
