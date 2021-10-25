@@ -71,7 +71,7 @@ body{
 }
 h3{
   color: rgb(255, 233, 30);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius--sm);
   background: linear-gradient(45deg, rgba(238, 88, 230, 0.712),rgba(78, 15, 129, 0.842));
   margin: auto;
   display: grid;
