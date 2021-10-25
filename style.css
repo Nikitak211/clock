@@ -1,85 +1,89 @@
 *,
 *::after,
 *::before {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 input,
 button,
 textarea,
 input::placeholder{
-    font-family: inherit;
-    color: inherit;
+  font-family: inherit;
+  color: inherit;
 }
 :root {
-    /* colors */
-    --hue: 220;
-    --text: var(--hue) 4.8% 28.9%;
-    --accent1: var(--hue) 43.6% 57.5%;
-    --accent2: var(--hue) 71.4% 95.9%;
-    --bkg: var(--hue) 100% 99.6%;
+  /* colors */
+  --hue: 220;
+  --text: var(--hue) 4.8% 28.9%;
+  --accent1: var(--hue) 43.6% 57.5%;
+  --accent2: var(--hue) 71.4% 95.9%;
+  --bkg: var(--hue) 100% 99.6%;
 
-    /* box shadows */
-    --boxs-sm: 
-    4px 6px 8px hsl(var(--accent1) / 14%),
-    -3px 3px 18px 2px hsl(var(--accent1) / 12%),
-    2px 5px 10px -3px hsl(var(--accent1) / 20%);
+  /* box shadows */
+  --boxs-sm: 
+  4px 6px 8px hsl(var(--accent1) / 14%),
+  -3px 3px 18px 2px hsl(var(--accent1) / 12%),
+  2px 5px 10px -3px hsl(var(--accent1) / 20%);
 
-    --boxs-lg: 
-    0px 8px 10px hsl(var(--accent1) / 14%),
-    0px 3px 14px 2px hsl(var(--accent1) / 12%),
-    0px 5px 5px -3px hsl(var(--accent1) / 20%);
+  --boxs-lg: 
+  0px 8px 10px hsl(var(--accent1) / 14%),
+  0px 3px 14px 2px hsl(var(--accent1) / 12%),
+  0px 5px 5px -3px hsl(var(--accent1) / 20%);
 
-    /* sizing */
-    --xlg: 2.369rem ;
-    --xl: 1.777rem ;
-    --md: 1.333rem ;
-    --sm: 1rem ;
-    --xsm: 0.75rem;
+  /* sizing */
+  --xlg: 2.369rem ;
+  --xl: 1.777rem ;
+  --md: 1.333rem ;
+  --sm: 1rem ;
+  --xsm: 0.75rem;
 
-    /* misc */
-    --radius--sm: 5px;
-    --radius-lg: 15px;
-    --transition: all 160ms cubic-bezier(0.99, 0.03, 0.68, 0.93);
+  /* misc */
+  --radius--sm: 5px;
+  --radius-lg: 15px;
+  --transition: all 160ms cubic-bezier(0.99, 0.03, 0.68, 0.93);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap');
 body{
-    background-color: hsl(var(--accent1));
-    font-family: 'Inter', sans-serif;
-    color: hsl(var(--text));
-    margin: var(--xlg) var(--lg);
-    font-size: var(--sm);
-    width: 100%;
+  background-color: rgba(177, 50, 250, 0.733);
+  font-family: 'Inter', sans-serif;
+  color: hsl(var(--text));
+  margin: var(--xlg) var(--lg);
+  font-size: var(--sm);
+  width: 100%;
 }
 .container{
-    display:grid;
-    grid-template-rows:auto auto 1fr;
-    gap: var(--xlg);
-    max-width: 100%;
+  display:grid;
+  grid-template-rows:auto auto 4fr;
+  gap: var(--xlg);
+  max-width: 100%;
 }
 .post-container{
-    color: black;
-    display: grid;
-    grid-template-columns: 
-    repeat(auto-fit,
-    minmax(220px, 1fr));
-    gap: var(--xlg);
-    align-items: start;
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
+  gap: var(--xlg);
+  align-items: start;
+}
+h3{
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px, 1fr));
+  gap: var(--xlg);
+  align-items: center;
 }
 h1{
-  
-position:relative; 
-margin: auto; 
-display: grid; 
-justify-content: center; 
-color:#94F4FFD6 ;
-animation:linear infinite alternate;
-animation-name: run; 
-animation-duration: 2s; 
+  position:relative; 
+  margin: auto; 
+  display: grid; 
+  justify-content: center; 
+  color:#94F4FFD6 ;
+  animation:linear infinite alternate;
+  animation-name: run; 
+  animation-duration: 2s; 
 } 
 @keyframes run {
   25% {
